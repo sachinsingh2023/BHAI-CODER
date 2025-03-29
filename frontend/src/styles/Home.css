@@ -1,0 +1,22 @@
+/* Particle Animation */
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Animation for code blocks */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Add this to your Home.js component's tech blocks */
+  .hover\:animate-float:hover {
+    animation: float 3s ease-in-out infinite;
+  }
